@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zain ul Abdin (116841)</title>
+  </head>
+  <body>
+    <script>
+      //       // 1.  Declare an empty array using JS literal notation to store
+      //       // student names in future.
+      //       // 2. Declare an empty array using JS object notation to store
+      //       // student names in future.
+            let student_data = [];
+      //       // 3.  Declare and initialize a strings array.
+            var stringArry = ["zaid", "umer", "bakar", "zahid"];
+      //       // 4.  Declare and initialize a numbers array.
+            var numbArry = [1, 2, 3, 4, 5, 6];
+      //       // 5.   Declare and initialize a boolean array.
+            var booleanarr = [true, false];
+      //       // 6. Declare and initialize a mixed array.
+            var mixedarr = [stringArry, booleanarr, numbArry];
+      //       //7.  Declare and Initialize an array and store available education
+      //       //    qualifications in Pakistan (e.g. SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD).
+      //       // Show the listed qualifications in your browser like:
+            var qualifi = [
+              "<h1>Qualifications<br>" +
+                "</h1>" +
+                "<h3>" +
+                "1.SSC<br>" +
+                "2.HSC<br>" +
+                "3.BCS<br>" +
+                "4.BCOM<br>" +
+                "5.MS<br>" +
+                "6.M.A<br>" +
+                "7.M.Phil<br>" +
+                "8.PhD<br>" +
+                "</h3>",
+            ];
+            document.write(qualifi);
+      //       //       8.  Write a program to store 3 student names in an array.Take
+      //       // another array to store score of these three students.
+      //       // Assume that total marks are 500 for each student, display
+      //       // the scores & percentages of students.
+            var teame = ["Micheal", "Tony", "John"];
+            var score = [320, 420, 360];
+            document.write(
+              "<h2>Score of" +
+                " " +
+                teame[0] +
+                score[0] +
+                " " +
+                "Percentage Is:" +
+                (score[0] / 500) * 100 +
+                "%<br>" +
+                "<h2>Score of" +
+                " " +
+                teame[1] +
+                score[1] +
+                " " +
+                "Percentage Is:" +
+                (score[1] / 500) * 100 +
+                "%<br>" +
+                "<h2>Score of" +
+                " " +
+                teame[2] +
+                score[2] +
+                " " +
+                "Percentage Is:" +
+                (score[2] / 500) * 100 +
+                "%<br>" +
+                "</h2>"
+            );
+      //       //     9. Initialize an array with color names. Display the array
+      //       // elements in your browser.
+      //       // a. Ask the user what color he/she wants to add to the
+      //       // beginning & add that color to the beginning of the array.
+      //       // Display the updated array in your browser.
+      //       // b. Ask the user what color he/she wants to add to the end
+      //       // & add that color to the end of the array. Display the
+      //       // updated array in your browser.
+      //       // c. Add two more color to the beginning of the array.
+      //       // Display the updated array in your browser.
+      //       // d. Delete the first color in the array. Display the updated
+      //       // array in your browser.
+      //       // e. Delete the last color in the array. Display the updated
+      //       // array in your browser.
+      //       // f. Ask the user at which index he/she wants to add a color
+      //       // & color name. Then add the color to desired
+      //       // position/index. . Display the updated array in your
+      //       // browser.
+      //       // g. Ask the user at which index he/she wants to delete
+      //       // color(s) & how many colors he/she wants to delete. Then remove the same number of color(s) from user-defined
+      //       // position/index. . Display the updated array in your
+      //       // browser.
+      let color_name=['<h6>Red','Blue','Black','Green'];
+      document.write("Color Name's"+color_name+"<br>");
+      let user_choice=prompt("Add The Any Color in start:");
+      color_name.unshift(user_choice);
+      document.write("a.The Update Color Is:",color_name,"<br>");
+      let add_last=prompt("Add Any In Last:");
+      color_name.push(add_last);
+      document.write("b.The 2nd Update Color Is:",color_name,"<br>");
+      color_name.unshift("yellow","perple")
+      document.write(".c Updated Tow Color's:",color_name,"<br>");
+      color_name.shift();
+      document.write(".d Update Deleted Color From Start:",color_name,"<br>");
+      color_name.pop( );
+      document.write(".e Update Deleted Color From Last:",color_name,"<br>");
+      var index=prompt("In Which Index You Want To Add\nchoose one number from 0 to 5:");
+      var color=prompt("Enter The Color Name For Add:");
+      color_name.splice(index,0,color);
+      document.write(".f Updated:",color_name,"<br>");
+      var indexdlt=prompt("Which Index you want to Delete It:");
+      var howm=prompt("How Much you want to Delete It:");
+       var Alternative=prompt("Enter The Alternative Index:");
+       color_name.splice(indexdlt,howm,Alternative);
+      document.write(".e Updated:",color_name,"<br></h6>");
+      // 10.  Write a program to store student scores in an array &
+      // sort the array in ascending order using Array’s sort
+      // method.
+       var scores=[320,440,560,670,230,150];
+       document.write("<h1>Student's Score Is:"+" "+scores+"<br>");
+       scores.sort( );
+       document.write("After Sort Student's Score Is:"+" "+scores+"<br><h1>");
+      //     11.  Write a program to initialize an array with city names.
+      // Copy 3 array elements from cities array to selectedCities
+      // array.
+
+      var cities=["lahore","karachi","Islamabad","Mutan","Headerabad","Tandoallahyar","<br>"];
+      var cityname = cities.slice(2,5);
+      document.write("Frist variable:<br>"+cities+"<br>");
+      document.write("After Copy From Frist variable:<br>"+cityname+"<br>");
+      // 12.    Write a program to create a single string from the
+      // below mentioned array:
+      // var arr = [“This ”, “ is ”, “ my ”, “ cat”];
+      // (Use array’s join method)
+
+      var arry = ["This "+" is "+" my "+" cat "];
+      document.write(arry);
+      // 13.  Create a new array. Store values one by one in such a way
+      // that you can access the values in the order in which they
+      // were stored. (FIFO-First In First Out)
+      var device=["Keyboard","Mouse","Printer","Moniter"];
+      document.write("<h1><br>"+"<br>"+"<br>"+"Device's:"+"<br>"+device+"<br></h1>");
+      document.write("<h2>Out"+"<br>"+device.shift( )+"<br>");
+      document.write("Out"+"<br>"+device.shift( )+"<br>");
+      document.write("Out"+"<br>"+device.shift( )+"<br>");
+      document.write("Out"+"<br>"+device.shift( )+"<br></h2>");
+      // 14.  Create a new array. Store values one by one in such a way
+      // that you can access the values in reverse order. (Last InFirst Out)
+      var device=["Keyboard","Mouse","Printer","Moniter"];
+      document.write("<h1><br>"+"<br>"+"<br>"+"Device's:"+"<br>"+device+"<br></h1>");
+      document.write("<h2>Out"+"<br>"+device.pop( )+"<br>");
+      document.write("<h2>Out"+"<br>"+device.pop( )+"<br>");
+      document.write("<h2>Out"+"<br>"+device.pop( )+"<br>");
+      document.write("<h2>Out"+"<br>"+device.pop( )+"<br>");
+      // 15.  Write a program to store phone manufacturers (Apple,
+      // Samsung, Motorola, Nokia, Sony & Haier) in an array.
+      // Display the following dropdown/select menu in your
+      // browser using document.write() method:
+var phone=["Apple"+"<br>"+"Samsung"+"<br>"+"Motorola"+"<br>"+"Nokia"+"<br>"+"Sony"+"<br>"+"Haier"];
+document.write("<h1><br>"+"<br>"+"<br>"+"Phone's in Dropdown List:<br><br>"+phone+"</h1>");
+
+
+
+    </script>
+  </body>
+</html>
